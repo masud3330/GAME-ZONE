@@ -1,4 +1,251 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* nav Bar styles */
+.nav-bar, .logo{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(233, 235, 235);
+}
+.nav-bar{
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+    
+}
+.logo h1{
+    font-size: 2rem;
+}
+.manu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+li{
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.Follow-us-on{
+    background-color: #00000052;
+    padding: 10px;
+    border-radius: 5px;
+   
+    
+}
+.Follow-us-on li a{
+    color: rgb(0, 0, 0);
+}
+.fa-youtube{
+    color: red;
+}
+.fa-tiktok{
+    color: #4f4e4e;
+}
+
+/* end nav bar */
+
+/* banner style */
+
+.banner-container{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-position: left, center;
+    
+}
+.banner-content{
+    
+  
+}
+
+.play-like{
+    color: #0B0223;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.GOAT{
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-pic img{
+    width: 400px;
+}
+
+.primary-btn , .secondary-btn{
+    padding: 10px;
+    border: none;
+    background-image: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+.secondary-btn{
+    background: #4EC5F7;
+}
+
+/* end  banner style */
+
+/* funny game section */
+
+.funny-game{
+    margin: 30px 0;
+}
+.funny-game-titel{
+    text-align: center;
+
+}
+.funny-game-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    
+   
+}
+.card {
+    width: 200px;
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+}
+
+/* end funny game section */
+
+
+/* Play-Instantly */
+
+.Play-Instantly{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    gap: 100px;
+    
+}
+.Play-Instantly-titel{
+   
+    text-align: right;
+}
+.Play-Instantly-titel p{
+    width: 300px;
+}
+.Play-Instantly-pic img{
+    width: 100%;
+    
+}
+
+.second-pic img{
+    width: 150px;
+    position: relative;
+    top: -100px;
+    left: -30px;
+   
+}
+/* end  Play-Instantly */
+
+/* footer */
+.footer{
+    color: white;
+    text-align: center;
+    background-color: #0B0223;
+    margin-bottom: 50px;
+    padding: 50px 0;
+}
+.logo-icon{
+    display: flex;
+    justify-content: center;
+}
+.logo-icon img{
+    width: 50px;
+    margin-right: 20px;
+}
+.footer ul{
+   justify-content: center;
+   margin: 20px 0;
+}
+
+.footer ul li a:hover{
+    background-color: #ffffff;
+    font-weight: 600;
+    padding: 3px;
+}
+.footer p{
+    font-size: 0.8rem;
+}
+/* end footer */
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .nav-bar, .manu, .about-developers {
+
+        flex-direction: column;
+        
+    }
+    .about-developers li{
+        margin: 20px 0;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+    .banner-container img{
+        width: 100%;
+    }
+
+    .funny-game-card-container{
+        flex-direction: column;
+    }
+    .card{
+       width: 300px;
+    }
+    .Play-Instantly{
+        flex-direction: column;
+        padding: 0 50px;
+       
+        gap: 30px;
+    }
+    .Play-Instantly-titel{
+        text-align: center;
+    }
+    .footer ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 20px;
+    }
+    .footer{
+        padding: 20px;
+    }
+    
 }
