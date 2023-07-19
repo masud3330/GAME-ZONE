@@ -159,7 +159,8 @@
 
 .card img:hover{
     filter:grayscale(3);
-    background-image: <i class="fa-solid fa-play"></i>;
+   
+    
     
 
 }
@@ -170,7 +171,7 @@
 /* Play-Instantly */
 
 .Play-Instantly{
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +182,16 @@
 .Play-Instantly-titel{
    
     text-align: right;
+}
+
+.Play-Instantly-titel h2{
+    font-size: 30px;
+}
+.Play-instantly{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .Play-Instantly-titel p{
     width: 300px;
@@ -269,6 +280,10 @@ footer{background-color: #0B0223;
 .font-icon{
     font-size: 20px;
 }
+.footer a{
+    text-decoration: none;
+    color: #a29f9f;
+}
 
 
 
@@ -276,7 +291,78 @@ footer{background-color: #0B0223;
 
 /* responsive */
 
+/* mobile device */
 @media screen and (max-width:576px) {
+    .nav-bar, .manu, .about-developers {
+
+        flex-direction: column;
+        
+    }
+    .about-developers li{
+        margin: 20px 0;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+    .banner-container img{
+        width: 50%;
+       
+    }
+
+    .funny-game-card-container{
+        flex-direction: column;
+    }
+    .card{
+       width: 300px;
+    }
+    .Play-Instantly{
+        flex-direction: column;
+        padding: 0 60px;
+       
+        gap: 30px;
+    }
+    .Play-Instantly-titel{
+        text-align: center;
+    }
+
+    .all-button{
+        width: 100%;
+    }
+    .button-container{
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 30px ;
+    }
+    .footer-bar{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .font-icon{
+        font-size: 20px;
+       
+    }
+    .settings-manu li{
+        margin: 10px ;
+        border: 3px solid yellow;
+    }
+    .footer{
+        
+        border: 3px solid red;
+        padding: 20px 50px;
+    }
+    .footer p{
+        font-size: 0.8rem;
+    }
+   
+    
+}
+
+/* tablet device */
+@media screen and (min-width:576px) and (max-width:992px) {
+
     .nav-bar, .manu, .about-developers {
 
         flex-direction: column;
@@ -293,46 +379,17 @@ footer{background-color: #0B0223;
     .banner-container img{
         width: 100%;
     }
-
+    
     .funny-game-card-container{
-        flex-direction: column;
-    }
-    .card{
-       width: 300px;
-    }
-    .Play-Instantly{
-        flex-direction: column;
-        padding: 0 50px;
-       
-        gap: 30px;
-    }
-    .Play-Instantly-titel{
-        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       padding: 0%;
     }
 
     .button-container{
         
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         padding: 20px ;
     }
-    .footer-bar{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-    .font-icon{
-        font-size: 20px;
-       
-    }
-    .settings-manu li{
-        margin: 10px ;
-    }
-    .footer{
-        padding: 20px 50px;
-    }
-    .footer p{
-        font-size: 0.8rem;
-    }
-   
-    
 }
