@@ -74,7 +74,7 @@
 
 .banner-container{
     fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -172,7 +172,7 @@
 /* Play-Instantly */
 
 .Play-Instantly{
-    border: 2px solid rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,7 +359,7 @@ footer{background-color: #0B0223;
     }
     .footer{
         
-        border: 3px solid red;
+        /* border: 3px solid red; */
         padding: 20px 50px;
     }
     .footer p{
