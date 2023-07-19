@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(233, 235, 235);
+   
 }
 .nav-bar{
     margin-top: 20px;
@@ -21,23 +21,32 @@
     margin-right: 10px;
     
 }
+.G{
+    color: #FF42A5;
+}
 .logo h1{
     font-size: 2rem;
+}
+.about-developers li a{
+    font-weight: 400;
+    color: #000000;
+
 }
 .manu{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-ul{
+.manu ul{
     list-style: none;
     display: flex;
     
 }
-li{
+.manu li{
     margin-right: 30px;
 }
-a{
+.manu a{
     text-decoration: none;
     font-weight: 400;
 }
@@ -64,6 +73,7 @@ a{
 /* banner style */
 
 .banner-container{
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     border: 2px solid red;
     display: flex;
     justify-content: space-around;
@@ -122,6 +132,15 @@ a{
     text-align: center;
 
 }
+.funny-game-titel h2{
+    margin: 10px 0;
+    font-size: 30px ;
+
+}
+.Funny-Videos{
+    font-size: 30px ;
+    text-transform: capitalize;
+}
 .funny-game-card-container{
     display: flex;
     justify-content: center;
@@ -136,6 +155,13 @@ a{
 }
 .card img{
     width: 100%;
+}
+
+.card img:hover{
+    filter:grayscale(3);
+    background-image: <i class="fa-solid fa-play"></i>;
+    
+
 }
 
 /* end funny game section */
@@ -173,35 +199,79 @@ a{
 }
 /* end  Play-Instantly */
 
+/* all button section */
+
+.all-button{
+    /* background-color: aqua; */
+}
+.button-container{
+    /* background-color: brown; */
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+    padding: 20px 200px;
+    
+}
+
+.button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-right: 10px;
+   margin: 10px;
+    /* padding: 5px; */
+    border-radius: 50px;
+    /* background-color: #0B0223; */
+   
+}
+.button img{
+    width: 40px;
+    margin-right: 5px;
+}
+.button:hover{
+    border: 2px solid #FF42A5;
+    color: #FF42A5;
+}
+
+
+
 /* footer */
-.footer{
-    color: white;
+footer{background-color: #0B0223;
+    padding: 20px 50px;
+    color: beige;
     text-align: center;
-    background-color: #0B0223;
-    margin-bottom: 50px;
-    padding: 50px 0;
 }
 .logo-icon{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .logo-icon img{
-    width: 50px;
-    margin-right: 20px;
+    width: 40px;
+    margin-right: 10px;
 }
-.footer ul{
-   justify-content: center;
-   margin: 20px 0;
+.footer-bar, .font-icon, .settings-manu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.font-icon li, .settings-manu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+   
+}
+.font-icon{
+    font-size: 20px;
 }
 
-.footer ul li a:hover{
-    background-color: #ffffff;
-    font-weight: 600;
-    padding: 3px;
-}
-.footer p{
-    font-size: 0.8rem;
-}
+
+
 /* end footer */
 
 /* responsive */
@@ -239,13 +309,30 @@ a{
     .Play-Instantly-titel{
         text-align: center;
     }
-    .footer ul{
+
+    .button-container{
+        
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        row-gap: 20px;
+        padding: 20px ;
+    }
+    .footer-bar{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .font-icon{
+        font-size: 20px;
+       
+    }
+    .settings-manu li{
+        margin: 10px ;
     }
     .footer{
-        padding: 20px;
+        padding: 20px 50px;
     }
+    .footer p{
+        font-size: 0.8rem;
+    }
+   
     
 }
