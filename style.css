@@ -27,26 +27,30 @@
 .logo h1{
     font-size: 2rem;
 }
-.about-developers li a{
+.about-developers li {
     font-weight: 400;
     color: #000000;
+    margin: 10px 0;
 
 }
-.manu{
+.about-developers li a{
+    color: black;
+}
+.nav-manu{
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-.manu ul{
+.nav-manu ul{
     list-style: none;
     display: flex;
     
 }
-.manu li{
+.nav-manu li{
     margin-right: 30px;
 }
-.manu a{
+.nav-manu a{
     text-decoration: none;
     font-weight: 400;
 }
@@ -69,337 +73,276 @@
 }
 
 /* end nav bar */
-
-/* banner style */
-
-.banner-container{
-    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    /* border: 2px solid red; */
+/* banner section */
+.banner-section{
     display: flex;
+    border: 2px solid red;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
     background-image: url("images/Group\ 14.png");
-    background-repeat: no-repeat;
-    background-position: left, center;
-    
+   background-repeat: no-repeat;
 }
-.banner-content{
-    
-  
-}
-
-.play-like{
-    color: #0B0223;
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.GOAT{
-    text-align: center;
-    font-size: 4.2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.banner-pic img{
-    width: 400px;
+.banner-section img{
+   height: 400px;
 }
 
 .primary-btn , .secondary-btn{
     padding: 10px;
+    background-color: #FF42A5;
     border: none;
-    background-image: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     border-radius: 20px;
-    font-weight: 600;
+    font-size: 1rem;
     color: white;
-    margin-top: 20px;
-}
-.secondary-btn{
-    background: #4EC5F7;
-}
-
-/* end  banner style */
-
-/* funny game section */
-
-.funny-game{
-    margin: 30px 0;
-}
-.funny-game-titel{
-    text-align: center;
-
-}
-.funny-game-titel h2{
-    margin: 10px 0;
-    font-size: 30px ;
-
-}
-.Funny-Videos{
-    font-size: 30px ;
-    text-transform: capitalize;
-}
-.funny-game-card-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-    
-   
-}
-.card {
-    width: 200px;
-    margin: 20px;
-}
-.card img{
-    width: 100%;
-}
-
-.card img:hover{
-    filter:grayscale(3);
-   
-    
-    
-
-}
-
-/* end funny game section */
-
-
-/* Play-Instantly */
-
-.Play-Instantly{
-    /* border: 2px solid rgb(0, 0, 0); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 200px;
-    gap: 100px;
-    
-}
-.Play-Instantly-titel{
-   
-    text-align: right;
-}
-
-.Play-Instantly-titel h2{
-    font-size: 30px;
-}
-.Play-instantly{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.Play-Instantly-titel p{
-    width: 300px;
-}
-.Play-Instantly-pic img{
-    width: 100%;
-    
-}
-
-.second-pic img{
-    width: 150px;
-    position: relative;
-    top: -100px;
-    left: -30px;
-   
-}
-/* end  Play-Instantly */
-
-/* all button section */
-
-.all-button{
-    /* background-color: aqua; */
-}
-.button-container{
-    /* background-color: brown; */
-    display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-    padding: 20px 200px;
-    
-}
-
-.button{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   margin-right: 10px;
-   margin: 10px;
-    /* padding: 5px; */
-    border-radius: 50px;
-    /* background-color: #0B0223; */
-   
-}
-.button img{
-    width: 40px;
-    margin-right: 5px;
-}
-.button:hover{
-    border: 2px solid #FF42A5;
-    color: #FF42A5;
-}
-
-
-
-/* footer */
-footer{background-color: #0B0223;
-    padding: 20px 50px;
-    color: beige;
-    text-align: center;
-}
-.logo-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo-icon img{
-    width: 40px;
-    margin-right: 10px;
-}
-.footer-bar, .font-icon, .settings-manu{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    justify-content: space-around;
-    align-items: center;
     margin: 20px 0;
 }
-.font-icon li, .settings-manu li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-   
+.secondary-btn{
+    background-color: bisque;
+    color: black;
 }
-.font-icon{
-    font-size: 20px;
-}
-.footer a{
-    text-decoration: none;
-    color: #a29f9f;
-}
+    /* end banner section */
 
+    /* online game section */
 
-
-/* end footer */
-
-/* responsive */
-
-/* mobile device */
-@media screen and (max-width:576px) {
-    .nav-bar, .manu, .about-developers {
-
-        flex-direction: column;
-        
-    }
-    .about-developers li{
-        margin: 20px 0;
-    }
-    .banner-container{
-        flex-direction: column-reverse;
-        /* padding: 20px; */
-        text-align: center;
-    }
-    .banner-container img{
-        width: 50%;
-       
-    }
-
-    .funny-game-card-container{
-        flex-direction: column;
+    .game-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 2px solid palevioletred;
+        margin-bottom: 20px;
     }
     .card{
-       width: 300px;
+        width: 200px;
     }
+    .card img{
+        width: 100%;
+    }
+
+    /* Play-Instantly */
     .Play-Instantly{
-        flex-direction: column;
-        padding: 0 60px;
-       
-        gap: 30px;
-    }
-   
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        border: 2px solid red;
+        margin-bottom: 20px;
     }
     .Play-Instantly-titel{
-        text-align: center;
+        text-align: right;
+        /* width: 50%; */
+       
     }
-    .Play-Instantly h2{
-        font-size: 22px;
+    .Play-Instantly-titel p{
+        width: 300px;
+    
+        text-align: right;
     }
-    .Play-Instantly p{
-        font-size: 14px;
+    .pic-55{
+        height: 400px;
+    }
+    .pic-66{
+        width: 150px;
+        position: relative;
+        top: -100px;
+        left: -40px;
+    }
+    /* man-button-area */
+   
+    .man-button-area{
+        padding: 0 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      margin-bottom: 20px;
+        border: 2px solid yellow;
+    }
+    .man-button-area img{
+        width: 40px;
+        margin-right: 10px;
     }
 
     .all-button{
-        width: 100%;
-    }
-    .button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        padding: 30px ;
+       /* background-color: aqua; */
+        margin: 10px;
+        /* width: 150px; */
+        padding: 5px;
+        border-radius: 50px;
+
     }
-    .footer-bar{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+    .all-button:hover{
+        border: 1px solid #FF42A5;
+        color: #FF42A5;
     }
-    .font-icon{
-        font-size: 20px;
-       
-    }
-    .settings-manu li{
-        margin: 10px ;
-        /* border: 3px solid yellow; */
-    }
-    .footer{
-        
-        /* border: 3px solid red; */
-        padding: 20px 50px;
-    }
-    .footer p{
-        font-size: 0.8rem;
-    }
-   
+    /* .all-button img{
+        width: 40px;
+    } */
+
+/* footer styles */
+footer{
+    margin-bottom: 40px;
+    background-color: #050516;
+    padding: 20px 0;
+    border: 2px solid rgb(255, 0, 0);
+    color: white;
+}
+
+.logo-icon-name{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bar, .font-icon, .settings-manu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.footer-bar li, .font-icon li, .settings-manu li{
+    list-style: none;
     
+}
+.footer-bar li a ,.font-icon i, .settings-manu a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+.font-icon i{
+    font-size: 20px;
+}
+.footer p{
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+/* responsive */
+
+@media screen and (max-width:576px) {
+   /* navbar */
+   .nav-bar{
+    flex-direction: column;
+}
+.nav-manu{
+    flex-direction: column;
+    
+}
+.about-developers{
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+/* banner */
+
+.banner-section{
+    flex-direction: column-reverse;
+}
+.banner-section img{
+    height: auto;
+
+    width: 100%;
+}
+
+  .game-card{
+    flex-direction: column;
+  }
+  .card{
+    width: 300px;
+  }
+
+  .Play-Instantly{
+    flex-direction: column;
+  
+}
+.Play-Instantly-titel{
+    margin: 20px 0;
+    text-align: center;
+}
+.Play-Instantly-titel p{
+    text-align: center;
+}
+ 
+ 
+   .Play-Instantly .pic-55{
+    width: 300px;
+    height: auto;
+   }
+   .pic-66{
+    width: 150px;
+    position: relative;
+    top: -100px;
+    left: -20px;
+}
+
+.man-button-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    padding: 0;
+}
+.man-button-area img{
+    width: 35px;
+}
 
 
-/* tablet device */
+.footer-bar, .font-icon , .settings-manu{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 15px;
+padding: 0 50PX;
+}
+.footer P{
+    padding: 0 50PX;
+    font-size: 0.8REM;
+    font-weight: 300;
+}
+    
+}
+
 @media screen and (min-width:576px) and (max-width:992px) {
 
-    .nav-bar, .manu, .about-developers {
-
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-manu{
         flex-direction: column;
         
     }
-    .about-developers li{
-        margin: 20px 0;
+    .about-developers{
+        flex-direction: column;
+        margin: 10px 0;
     }
-    .banner-container{
-        flex-direction: column-reverse;
-        padding: 20px;
-        text-align: center;
+    /* banner */
+    .banner-section,  .game-card{
+        display: flex;
+        
+        /* padding: 20px; */
+        justify-content: space-around;
+        align-items: center;
     }
-    .banner-container img{
-        width: 100%;
-    }
-    
-    .funny-game-card-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-       padding: 0%;
-       gap: 20px;
+    .game-card{
+        padding: 0 20px;
     }
 
-    .button-container{
-        
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        padding: 20px ;
+    .Play-Instantly{
+        gap: 50px;
     }
+
+    .man-button-area{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        
+        padding: 0;
+    }
+    .man-button-area img{
+        width: 35px;
+    }
+
 }
